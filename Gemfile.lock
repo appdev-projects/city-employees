@@ -26,18 +26,6 @@ GIT
   specs:
     grade_runner (0.0.3.pre.3)
 
-GIT
-  remote: https://github.com/firstdraft/web_git.git
-  revision: 465809875effc2437d7dcda45beaafc2e3ad8ed7
-  specs:
-    web_git (0.0.1)
-      git_clone_url
-      jquery-rails
-      octicons_helper
-      tether-rails
-      turbolinks (~> 5)
-      tzinfo-data
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -141,6 +129,7 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.3)
+    diffy (3.3.0)
     dotenv (2.7.4)
     dotenv-rails (2.7.4)
       dotenv (= 2.7.4)
@@ -363,6 +352,14 @@ GEM
       activemodel (>= 5.0)
       bindex (>= 0.4.0)
       railties (>= 5.0)
+    web_git (0.0.2)
+      diffy
+      git_clone_url
+      jquery-rails
+      octicons_helper
+      tether-rails
+      turbolinks (~> 5)
+      tzinfo-data
     webmock (3.6.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
@@ -411,7 +408,7 @@ DEPENDENCIES
   tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
-  web_git!
+  web_git
   webmock
 
 RUBY VERSION
